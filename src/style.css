@@ -8,6 +8,23 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.grid-footer-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-main-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/hero.jpeg");
@@ -55,6 +72,38 @@ header a {
   display: inline-block;
 }
 
+main {
+  background-color: white;
+  padding: 100px;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #113c5a;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #113c5a;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #113c5a;
+  opacity: 0.8;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(17, 60, 90, 0.6),
@@ -69,14 +118,8 @@ footer {
 }
 
 section {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 50px;
 }
 
 footer h3 {
