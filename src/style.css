@@ -7,7 +7,9 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
+.text-center {
+  text-align: center;
+}
 .grid {
   display: grid;
   grid-gap: 50px;
@@ -25,6 +27,44 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-main-secondary-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background-color: #113c5a;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 16px;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/hero.jpeg");
@@ -33,21 +73,21 @@ header {
   background-position: center;
   color: white;
   text-align: center;
-  padding: 260px 0;
+  padding: 200px 0;
 }
 
 header h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
-  margin: 0;
+  margin: 30px 0;
 }
 
 header h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
-  margin: 20px 0 0;
+  margin: 0;
 }
 
 header h3 {
@@ -74,7 +114,6 @@ header a {
 
 main {
   background-color: white;
-  padding: 100px;
 }
 
 main h2 {
@@ -96,12 +135,29 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #113c5a;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  color: #113c5a;
+  margin: 0;
+}
+
 main p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #113c5a;
   opacity: 0.8;
+  text-align: justify;
 }
 
 footer {
@@ -114,12 +170,6 @@ footer {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px;
-}
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 footer h3 {
@@ -145,7 +195,7 @@ footer li {
   font-size: 16px;
   line-height: 24px;
   list-style: none;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
 }
 
@@ -167,5 +217,9 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }
